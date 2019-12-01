@@ -1,0 +1,7 @@
+<h1><%=@destination.name%></h1>
+<%=@destination.country%><br>
+
+
+ 
+
+<%= @post = @destination.posts.max_by { |x| x.likes}.title %>
